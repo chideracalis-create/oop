@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f6f2">
+    <title>Overview | Northline Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="dashboard-page">
+    <header class="site-header">
+        <a class="brand" href="dashboard.html" aria-label="Northline Bank overview">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span>northline<span class="brand-light">bank</span></span>
+        </a>
+        <nav class="header-nav" aria-label="Main navigation">
+            <a class="nav-current" href="dashboard.html">Overview</a>
+        </nav>
+        <div class="header-account">
+            <span class="avatar" aria-hidden="true">JM</span>
+            <span class="account-name">Jordan Morgan</span>
+            <a class="logout-link" href="index.html">Log out <span aria-hidden="true">↗</span></a>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="dashboard-heading">
+            <div>
+                <p class="eyebrow">MONDAY, OCTOBER 12, 2026</p>
+                <h1>Good morning, Jordan<span class="heading-period">.</span></h1>
+                <p class="muted-copy">Here’s what’s happening with your money.</p>
+            </div>
+            <a class="account-chip" href="#transactions"><span class="account-chip-dot"></span> Everyday account <span class="account-number">•• 4821</span></a>
+        </div>
+
+        <section class="summary-grid" aria-label="Account summary">
+            <article class="summary-card balance-card">
+                <div class="summary-top"><span>AVAILABLE BALANCE</span><span class="card-mark" aria-hidden="true">N</span></div>
+                <p class="balance-amount">$8,420<span>.50</span></p>
+                <p class="summary-foot">Everyday account <span>•• 4821</span></p>
+            </article>
+            <article class="summary-card">
+                <div class="summary-top"><span>MONEY IN</span><span class="summary-icon incoming-icon" aria-hidden="true">↓</span></div>
+                <p class="metric-amount">$3,250<span>.00</span></p>
+                <p class="summary-foot">This month <span class="metric-note">↑ 8.2%</span></p>
+            </article>
+            <article class="summary-card">
+                <div class="summary-top"><span>MONEY OUT</span><span class="summary-icon outgoing-icon" aria-hidden="true">↑</span></div>
+                <p class="metric-amount">$1,482<span>.36</span></p>
+                <p class="summary-foot">This month <span>Across 12 payments</span></p>
+            </article>
+        </section>
+
+        <div class="dashboard-columns">
+            <section class="transactions-panel" id="transactions" aria-labelledby="transactions-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">YOUR ACCOUNT</p>
+                        <h2 id="transactions-title">Recent activity</h2>
+                    </div>
+                    <a class="text-link" href="#transactions">See all <span aria-hidden="true">→</span></a>
+                </div>
+
+                <div class="transaction-list">
+                    <article class="transaction-row">
+                        <span class="transaction-icon outgoing-icon" aria-hidden="true">↑</span>
+                        <div class="transaction-info"><h3>Harbor Market</h3><p>Today, 10:42 AM <span class="transaction-category">Groceries</span></p></div>
+                        <div class="transaction-amount"><strong class="amount-out">−$64.28</strong><span class="transaction-flag flag-out">Outgoing</span></div>
+                    </article>
+                    <article class="transaction-row">
+                        <span class="transaction-icon incoming-icon" aria-hidden="true">↓</span>
+                        <div class="transaction-info"><h3>Northline Payroll</h3><p>Oct 10, 8:05 AM <span class="transaction-category">Income</span></p></div>
+                        <div class="transaction-amount"><strong class="amount-in">+$2,850.00</strong><span class="transaction-flag flag-in">Incoming</span></div>
+                    </article>
+                    <article class="transaction-row">
+                        <span class="transaction-icon outgoing-icon" aria-hidden="true">↑</span>
+                        <div class="transaction-info"><h3>City Power &amp; Light</h3><p>Oct 9, 4:18 PM <span class="transaction-category">Utilities</span></p></div>
+                        <div class="transaction-amount"><strong class="amount-out">−$92.14</strong><span class="transaction-flag flag-out">Outgoing</span></div>
+                    </article>
+                    <article class="transaction-row">
+                        <span class="transaction-icon incoming-icon" aria-hidden="true">↓</span>
+                        <div class="transaction-info"><h3>Transfer from savings</h3><p>Oct 8, 1:32 PM <span class="transaction-category">Transfer</span></p></div>
+                        <div class="transaction-amount"><strong class="amount-in">+$400.00</strong><span class="transaction-flag flag-in">Incoming</span></div>
+                    </article>
+                    <article class="transaction-row">
+                        <span class="transaction-icon outgoing-icon" aria-hidden="true">↑</span>
+                        <div class="transaction-info"><h3>Metro Transit</h3><p>Oct 7, 7:51 AM <span class="transaction-category">Transport</span></p></div>
+                        <div class="transaction-amount"><strong class="amount-out">−$24.50</strong><span class="transaction-flag flag-out">Outgoing</span></div>
+                    </article>
+                </div>
+                <div class="activity-legend" aria-label="Transaction types"><span><i class="legend-dot legend-in"></i> Money in</span><span><i class="legend-dot legend-out"></i> Money out</span></div>
+            </section>
+
+            <aside class="actions-column" aria-label="Account actions">
+                <section class="action-panel" aria-labelledby="deposit-title">
+                    <div class="action-heading"><span class="action-symbol incoming-icon" aria-hidden="true">↓</span><div><p class="eyebrow">ADD TO YOUR ACCOUNT</p><h2 id="deposit-title">Make a deposit</h2></div></div>
+                    <form class="transaction-form" action="#" method="get">
+                        <label for="deposit-amount">Amount</label>
+                        <div class="amount-input"><span aria-hidden="true">$</span><input id="deposit-amount" name="deposit-amount" type="number" min="0.01" step="0.01" placeholder="0.00" inputmode="decimal"></div>
+                        <label for="deposit-source">Deposit to</label>
+                        <select id="deposit-source" name="deposit-source"><option>Everyday account •• 4821</option></select>
+                        <button class="button button-primary button-wide" type="button">Continue deposit <span aria-hidden="true">→</span></button>
+                    </form>
+                </section>
+
+                <section class="action-panel withdraw-panel" aria-labelledby="withdraw-title">
+                    <div class="action-heading"><span class="action-symbol outgoing-icon" aria-hidden="true">↑</span><div><p class="eyebrow">MOVE MONEY OUT</p><h2 id="withdraw-title">Make a withdrawal</h2></div></div>
+                    <form class="transaction-form" action="#" method="get">
+                        <label for="withdraw-amount">Amount</label>
+                        <div class="amount-input"><span aria-hidden="true">$</span><input id="withdraw-amount" name="withdraw-amount" type="number" min="0.01" step="0.01" placeholder="0.00" inputmode="decimal"></div>
+                        <label for="withdraw-destination">Withdraw from</label>
+                        <select id="withdraw-destination" name="withdraw-destination"><option>Everyday account •• 4821</option></select>
+                        <button class="button button-secondary button-wide" type="button">Continue withdrawal <span aria-hidden="true">→</span></button>
+                    </form>
+                </section>
+                <p class="help-note">Questions about a transaction? <a class="text-link" href="mailto:support@northlinebank.example">We’re here to help.</a></p>
+            </aside>
+        </div>
+        <footer class="dashboard-footer"><span>© 2026 Northline Bank</span><span>Member FDIC <span class="footer-separator">·</span> Equal Housing Lender</span></footer>
+    </main>
+</body>
+</html>

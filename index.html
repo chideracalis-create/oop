@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f6f2">
+    <title>Sign in | Northline Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="login-page">
+    <main class="login-shell">
+        <section class="login-panel" aria-labelledby="login-title">
+            <a class="brand" href="index.html" aria-label="Northline Bank home">
+                <span class="brand-mark" aria-hidden="true">N</span>
+                <span>northline<span class="brand-light">bank</span></span>
+            </a>
+
+            <div class="login-copy">
+                <p class="eyebrow">PERSONAL BANKING</p>
+                <h1 id="login-title">Good to have<br>you back.</h1>
+                <p class="muted-copy">Sign in securely to see your account and recent activity.</p>
+            </div>
+
+            <form class="login-form" action="dashboard.html" method="get">
+                <label for="account-number">Bank account number</label>
+                <input id="account-number" type="text" inputmode="numeric" autocomplete="username" placeholder="Enter your account number" required>
+
+                <div class="label-row">
+                    <label for="password">Password</label>
+                    <a class="text-link" href="#">Forgot password?</a>
+                </div>
+                <input id="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+
+                <button class="button button-primary button-wide" type="submit">Sign in <span aria-hidden="true">→</span></button>
+            </form>
+
+            <p class="secure-note"><span class="lock-icon" aria-hidden="true">●</span> Your information is protected with bank-level security.</p>
+            <p class="login-footer">Need help? <a class="text-link" href="mailto:support@northlinebank.example">Contact support</a></p>
+        </section>
+
+        <aside class="login-aside" aria-label="Northline Bank account information">
+            <div class="aside-topline"><span>YOUR MONEY, IN GOOD COMPANY</span><span class="aside-dot"></span></div>
+            <div class="aside-content">
+                <p class="aside-index">01 / 03 &nbsp;•&nbsp; EVERYDAY BANKING</p>
+                <h2>More clarity.<br>Less bank stuff.</h2>
+                <p>Keep track of what comes in, what goes out, and what’s yours to plan with.</p>
+            </div>
+            <div class="aside-bottom"><span>EST. 1987</span><span>HERE FOR WHAT’S NEXT</span></div>
+            <div class="decorative-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+        </aside>
+    </main>
+</body>
+</html>
